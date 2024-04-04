@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import "../styles/variable";
+
+body {
+    margin: 0;
+    color: $kasa_pink;
+    font-family: 'Montserrat', sans-serif;      
+    user-select: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+}
+
+.main_body {
+    margin: 28px 6vw;
+}
+

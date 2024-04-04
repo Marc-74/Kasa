@@ -1,0 +1,39 @@
+.banner
+{
+    width: 100%;
+    position: relative;
+
+    img {
+    position: relative;
+    width: 100%;
+    border-radius: 25px;
+    height: 340px;
+    object-fit: cover;  
+    margin: 20px 0px;
+    filter: brightness(35%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+    span {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    font-weight: 700;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
