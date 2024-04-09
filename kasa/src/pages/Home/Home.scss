@@ -16,8 +16,12 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 30px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-
-
+@media (max-width: 600px) {
+    .gallery {
+        background: none;
+        padding: 0;
+    }
+}

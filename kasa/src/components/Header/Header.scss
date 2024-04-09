@@ -32,3 +32,15 @@
     }    
 }
 
+@media (max-width: 800px) {
+        .header img {
+            width: 120px;
+            height: auto;
+        }
+
+        .header_link {
+            font-size: 12px;
+            gap: 0.8rem;
+        }
+       
+    }

@@ -4,7 +4,7 @@ import "./Header.scss";
 
 function Header() {
 
-  let accueil = "Accueil";
+  let accueil  = "Accueil";
   let a_propos = "A Propos";
 
   return (

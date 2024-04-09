@@ -10,3 +10,4 @@ function Banner({ img, alt, title }) {
 }
 
 export default Banner;
+

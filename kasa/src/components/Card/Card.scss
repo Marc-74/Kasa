@@ -1,0 +1,57 @@
+@import "../../styles/variable";
+
+.card {
+    flex: 0 0 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px); 
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 21.25rem;
+    height: 21.25rem;
+    background: linear-gradient(white,black);
+    position: relative;
+
+    &:hover {
+        transform: scale(1.04);   
+        transition: transform 0.1s ease;    
+    }
+    img {
+        opacity: 0.5;
+        height: 21.25rem;
+        margin: 0;
+        border-radius: 10px;
+        width: 100%;
+        object-fit: cover;
+
+        &:hover {
+            opacity: 0.8;     
+        }
+    }
+    
+    span {
+        position: absolute;
+        bottom: 5%;
+        left: 20px;
+        color: white;
+        width: 70%;
+    }
+}
+
+@media (max-width:1024px) {
+    .card {
+        flex: 0 0 calc(50% - 20px); 
+        max-width: calc(50% - 20px)
+    }
+    
+} 
+
+@media (max-width: 600px) {
+    .card{    
+        flex: 0 0 100%; 
+        max-width: 100%;
+        height: 16rem;
+
+        img {
+            height: 16rem;
+        }
+    }
+}

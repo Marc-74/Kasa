@@ -8,6 +8,10 @@ body {
     user-select: none;
 }
 
+.main_body {
+    margin: 28px 6vw;
+}
+
 #root {
     display: flex;
     flex-direction: column;
@@ -15,7 +19,4 @@ body {
     min-height: 100vh;
 }
 
-.main_body {
-    margin: 28px 6vw;
-}
 
