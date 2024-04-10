@@ -1,0 +1,89 @@
+@import "../../styles/variable";
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+.article {
+    width: 85%;
+    border-radius: 5px;
+    margin: 15px;
+  
+    .arrow {
+      transition: transform 0.3s ease;
+      font-size: 30px;
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
+  
+    .item {
+      color: white;
+      background: $kasa_pink;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px 0 10px;
+      height: 3.5rem;
+      border-radius: 5px;
+  
+      p {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+  
+      span {
+        font-size: 3.5rem;
+        cursor: pointer;
+      }
+    }
+  
+    .description {
+      background-color: #fbfbfb;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 800ms ease-in-out;
+      span {
+        color: black;
+        font-size: 19px;
+        padding: 1em;
+        display: inline-block;
+      }
+    }
+  
+    &.open {
+      .description {
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out; 
+      }
+    }
+  }
+  
+  .material-symbols-outlined {
+    font-size: 20px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    .article {
+      width: 100%;
+      margin: 10px 20px 0px 20px;
+  
+      .item {
+        height: 30px;
+  
+        p {
+          font-size: 13px;
+        }
+  
+        span {
+          font-size: 2em;
+        }
+      }
+  
+      .description {
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  
+  
