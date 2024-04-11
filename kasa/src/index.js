@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import APropos from "./pages/APropos";
+import Error404 from "./pages/Error404";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./styles/global.scss";
@@ -18,6 +19,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/a-propos" element={<APropos />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer/>
     </Router>
