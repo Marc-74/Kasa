@@ -1,2 +1,51 @@
-
+.carousel-container {
+    position: relative;
+  }
   
+  .banner_img {
+    width: 100%;
+    height: 555px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  
+  .arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top:218px;  
+ 
+    
+    .arrow {
+      width:50px;
+      height: 79.2px;
+      cursor: pointer;
+      padding: 0 20px;
+    
+    }
+  }
+
+  .pictures_numbers {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: white;
+    font-weight: 700;
+  }
+
+  @media (min-width:320px) and (max-width:767px) {
+    .banner_img {
+      height: 255px;   
+      border-radius: 10px;   
+    }
+    .arrows {      
+      top:100px;
+      .arrow {
+        width:12px;
+        height:20px;        
+        padding: 0 5px;
+      }
+    }
+
+}

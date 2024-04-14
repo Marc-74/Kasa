@@ -10,17 +10,16 @@ function Home() {
       <section>
         <Banner
           img={img_1}
-          alt="Paysage de Rocher et mer"
+          alt="Paysage de Rocher"
           title="Chez vous, partout et ailleurs"
         />
       </section>
-      
       <section className="gallery">
-        {logements.map((logement, index) => ( /* Boucle sur chaque élément de la liste logements */
+        {logements.map((logement, index) => (
           <Card
-            key={index} /* Propriété key pour aider React à identifier chaque élément de manière unique */
-            cover={logement.cover} /* Prop correspondant à l'image de couverture du logement */
-            title={logement.title} 
+            key={index}
+            cover={logement.cover}
+            title={logement.title}
             logement={logement.id}
           />
         ))}
