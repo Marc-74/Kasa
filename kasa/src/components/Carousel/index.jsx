@@ -3,7 +3,6 @@ import "./Carousel.scss";
 import arrow_left from "../../assets/arrow_left.png";
 import arrow_right from "../../assets/arrow_right.png";
 
-
 function Carousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleArrowClick = (direction) => {

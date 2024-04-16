@@ -1,5 +1,5 @@
-
 import "./avatar.scss";
+
 function Avatar({ name, picture }) {
   return (
     <div className="avatar">
