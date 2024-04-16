@@ -15,7 +15,7 @@ function Home() {
         />
       </section>
       <section className="gallery">
-        {logements.map((logement, index) => (
+        {logements.map((logement, index) => ( // map pour parcourir le tableau
           <Card
             key={index}
             cover={logement.cover}

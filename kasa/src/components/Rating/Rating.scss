@@ -1,0 +1,22 @@
+@import "../../styles/variable";
+
+.rating {
+    .star {
+        width: 24px;
+        height: auto;
+      color: #E3E3E3;     
+        margin-left: 10px;
+    
+      &.filled {
+        color: $kasa_pink; 
+      }
+    }
+  }
+
+  @media (min-width:320px) and (max-width:767px){
+   .rating >.star {
+    width: 13px;
+    height: auto;
+   }
+   
+}

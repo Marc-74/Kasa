@@ -6,7 +6,7 @@ function Card({ cover, title, logement }) {
   return (
     <article className="card">
       <Link to={`/fiche-de-logement/${logement}`}>
-        <img src={cover} alt="" />
+        <img src={cover} alt="Images de logements" />
         <span>{title}</span>
       </Link>
     </article>
