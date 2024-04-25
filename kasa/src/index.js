@@ -11,7 +11,7 @@ import "./styles/global.scss";
 
 document.title = "Kasa";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root")); // Crée un point de départ pour le rendu React
 
 root.render(
   <React.StrictMode>

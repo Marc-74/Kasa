@@ -26,20 +26,20 @@ function FicheLogement() {
           <ul>
             {logement.tags.map((tag) => ( // méthode map pour parcourir un tableau (ici logement.tags)
               <li key={tag}>
-                <Tag label={tag} />
+                <Tag label={tag} /> 
               </li>
             ))}
           </ul>
         </div>
         <div className="commercial_and_rating">
-          <Avatar name={logement.host.name} picture={logement.host.picture} />
+          <Avatar name={logement.host.name} picture={logement.host.picture} /> 
           <Rating value={logement.rating} max="5" />
         </div>
       </div>
       <div className="collapses">
         <Collapse label="Description" description={logement.description} />
         <Collapse label="Équipements"
-          description={logement.equipments.map((equipment) => (
+          description={logement.equipments.map((equipment) => ( 
             <p key={equipment}>{equipment}</p>
           ))}
         />

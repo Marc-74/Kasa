@@ -1,7 +1,7 @@
 import "./Card.scss";
 import { Link } from "react-router-dom";
 
-function Card({ cover, title, logement }) {
+function Card({ cover, title, logement }) { // La fonction Card est définie comme un composant React prenant trois props
   return (
     <article className="card">
       <Link to={`/fiche-de-logement/${logement}`}>
